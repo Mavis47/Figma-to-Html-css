@@ -1,0 +1,325 @@
+/* Basic CSS for styling the header */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.logo {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    height: 24px; /* Adjust the height as needed */
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sidebar{
+    height: 78vh;
+    width: 124px;
+    left: 0;
+    background: whitesmoke;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    transition: width 0.3s ease;
+}
+
+.sidebar.open {
+    width: 250px; /* Expanded width */
+}
+
+.sidebartext{
+    width: 123px;
+    height: 50px;
+    background: black;
+    padding: 20px;
+
+}
+.iconcolor{
+    color: #f4f4f4;
+    font-size: 24px;
+    margin-left: 68px;
+}
+
+.number span{
+    border: 1px solid #1391f2;
+    padding: 17px;
+    border-radius: 8px;
+
+}
+
+.number{
+    text-align: center;
+    margin-top: 42px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hide the ul */
+}
+
+.sidebar.open ul {
+    display: block; /* Show the ul when sidebar is open */
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main {
+   
+    margin-top: 19px;
+}
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading h1{
+    color: blue;
+}
+
+.taskbutton{
+    height: 42px;
+    border-radius: 15px;
+}
+
+.content{
+    margin-top: 32px;
+    width: 89vw;
+    margin-left: 166px;
+    background: #d9d7d7;
+    height: 122px;
+    line-height: 35px;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.content h2{
+    margin-left: 1vw;
+    margin-top: 20px;
+}
+
+.content p {
+    margin-left: 17px;
+}
+
+.box{
+    margin-left: 202px;
+    margin-top: 44px;
+}
+
+.box2{
+    margin-left: 202px;
+    margin-top: 44px;
+}
+
+.management,
+.threadbuild,
+.pointer,
+.method {
+    margin: 0 10px;
+    border-radius: 11px;
+    width: 619px;
+    height: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manageheader{
+    background-color: black;
+    border-radius: 11px;
+    height: 59px;
+}
+
+.manageheader h6{
+    color: white;
+    text-align: center;
+    line-height: 49px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.threadbuildheader{
+    background-color: black;
+    border-radius: 11px;
+    height: 59px;
+}
+
+.threadbuildheader h6{
+    color: white;
+    text-align: center;
+    line-height: 49px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pointerheader{
+    background-color: black;
+    border-radius: 11px;
+    height: 59px;
+}
+
+.pointer h6{
+    color: white;
+    text-align: center;
+    line-height: 49px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.methodheader{
+    background-color: black;
+    border-radius: 11px;
+    height: 59px;
+}
+
+.methodheader h6{
+    color: white;
+    text-align: center;
+    line-height: 49px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.desc {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.desc p {
+    text-align: left;
+    line-height: 40px;
+    padding-left: 27px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.desc span {
+    font-weight: 100;
+}
+
+.form3{
+    padding: 25px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .details {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .threadAcard{
+    background-color: #cdd3d7;
+    height: 132px;
+    width: 235px;
+    margin-top: 34px;
+    margin-left: 30px;
+    border-radius: 21px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .subthread{
+    height: 91px;
+  }
+  .subthread textarea{
+    width: 235px;
+    height: 91px;
+    border-radius: 18px;
+  }
+  .threadtext p{
+    position: relative;
+    top: 4px;
+    margin-left: 9px;
+  }
+  textarea ::placeholder{
+    margin-left: 3px;
+  }
+
+  .iconsthread{
+    justify-content: center;
+    display: flex;
+  }
+  .iconsthread .fa-solid{
+    font-size: 23px;
+    line-height: 37px;
+    padding: 14px;
+  }
+  .iconsthread button{
+    width: 159px;
+    height: 39px;
+    margin-top: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .textareathread{
+    margin-top: 20px;
+    background: #e7e7e7;
+    border-radius: 31px;
+  }
+
+  .textareathread p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 22px;
+    margin-left: 21px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 7px;
+
+  }
+
+  .fourSA{
+    padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  }
+
+  #more{
+    border: none;
+    margin-left: 483px;
+  }
+  #more1{
+    border: none;
+    margin-left: 483px;
+  }
